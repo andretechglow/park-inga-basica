@@ -35,6 +35,7 @@ footer{padding:26px 0 18px;font-size:13px;color:var(--muted)}.links{display:flex
 .tabs{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:4px;max-width:460px}.tab{border:0;background:transparent;color:var(--ink);font:600 15px Inter,sans-serif;padding:12px 8px;border-radius:10px;cursor:pointer}.tab[aria-selected="true"]{background:var(--red);color:#fff}.tab:focus-visible{outline:3px solid var(--red);outline-offset:2px}
 .tabs{margin-top:20px}.ph{aspect-ratio:4/5;display:grid;place-items:center;text-align:center;background:linear-gradient(135deg,#3a3636,#7a726c);color:#E8E2DC;padding:16px;font-size:14px}.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:30px 0}
 .sh{font-size:clamp(22px,5vw,30px);font-weight:700;margin:26px 0 2px}.ssub{margin:0;color:var(--muted)}
+.soon{grid-column:1/-1;background:var(--surface);border:1.5px dashed var(--line);border-radius:18px;padding:28px 20px;text-align:center}.soon b{font:700 clamp(18px,4.5vw,24px) Archivo,Inter,sans-serif;font-stretch:125%}.soon p{margin:8px 0 18px;color:var(--muted)}.soon .btn{max-width:320px;margin:0 auto}
 </style></head>
 <body>
 <header class="top"><div class="wrap">
@@ -67,12 +68,12 @@ var OPS=[
 {c:"invest",img:"images/oportunidade-4-investimentos.jpg",t:"Investimentos · crédito de R$ 110.000",d:"19/10"}];
 function wa(t){return "https://wa.me/"+NUM+"?text="+encodeURIComponent(t)}
 var g=document.getElementById("grid");
-/* CONTEMPLADAS: adicione aqui no mesmo formato das oportunidades. Vazio = a seção some.
+/* CONTEMPLADAS: adicione aqui no mesmo formato das oportunidades. Vazio = aparece a mensagem "Em breve".
    Exemplo: {c:"veiculos",img:"images/contemplada-1.jpg",t:"Veículos · contemplada de R$ 80.000",d:"19/10"} */
 var OPC=[];
 var cat="todos",g2=document.getElementById("grid2");
 function card(o,k){var h=wa((k?"Olá! Vi a cota contemplada: ":"Olá! Vi a oportunidade: ")+o.t+" (análise de "+o.d+"). Ainda está disponível?");var pic=o.img?'<img src="'+o.img+'" alt="'+o.t+', análise de '+o.d+'" loading="lazy">':'<div class="ph">Sua arte da cota contemplada<br>(formato 4:5)</div>';return '<article class="card" data-c="'+o.c+'"><a href="'+h+'" target="_blank" rel="noopener">'+pic+'</a><div class="in"><a class="btn" href="'+h+'" target="_blank" rel="noopener">'+(k?"Quero esta cota":"Quero esta oportunidade")+'</a><small>Análise de '+o.d+'</small></div></article>'}
-function render(){var L=OPS.filter(function(o){return cat=="todos"||o.c==cat});g.innerHTML=L.length?L.map(function(o){return card(o,false)}).join(""):'<p class="empty">Nenhuma oportunidade nesta categoria agora. Chame no WhatsApp!</p>';document.getElementById("contSec").hidden=!OPC.length;g2.innerHTML=OPC.map(function(o){return card(o,true)}).join("")}
+function render(){var L=OPS.filter(function(o){return cat=="todos"||o.c==cat});g.innerHTML=L.length?L.map(function(o){return card(o,false)}).join(""):'<p class="empty">Nenhuma oportunidade nesta categoria agora. Chame no WhatsApp!</p>';g2.innerHTML=OPC.length?OPC.map(function(o){return card(o,true)}).join(""):'<div class="soon"><b>Em breve, novas cotas contempladas</b><p>Quer ser avisado quando surgir uma? Fale comigo no WhatsApp.</p><a class="btn" href="'+wa("Olá! Quero ser avisado quando tiver cotas contempladas disponíveis.")+'" target="_blank" rel="noopener">Quero ser avisado</a></div>'}
 document.getElementById("chips").addEventListener("click",function(e){var b=e.target.closest(".chip");if(!b)return;cat=b.dataset.c;document.querySelectorAll(".chip").forEach(function(c){c.setAttribute("aria-pressed",c===b)});render()});
 render();
 document.querySelectorAll("[data-msg]").forEach(function(a){a.href=wa(a.dataset.msg);a.target="_blank";a.rel="noopener"});

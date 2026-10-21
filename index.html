@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Oportunidades de Consórcio | André Zanqueta · Park Ingá</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F4F1;--surface:#fff;--ink:#1A1A1A;--muted:#5F5B58;--line:#E6E1DB;--brand:#1C1A1A;--red:#C8102E;--pink:#FBE4E8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141212;--surface:#1F1C1C;--ink:#F2EFEC;--muted:#B5AFA9;--line:#363131;--brand:#1F1C1C;--pink:#3A1C22;--red:#E0334F;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141212;--surface:#1F1C1C;--ink:#F2EFEC;--muted:#B5AFA9;--line:#363131;--brand:#1F1C1C;--pink:#3A1C22;--red:#E0334F;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Inter,system-ui,sans-serif;padding-bottom:90px}
+h1,h2{font-family:Archivo,Inter,sans-serif;font-stretch:125%;line-height:1.1;margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.mock{background:var(--red);color:#fff;text-align:center;font-size:13px;font-weight:600;padding:6px 12px}
+.top{background:var(--brand);color:#fff;padding:26px 0 30px}
+.who{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.who img{width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:50% 18%;border:3px solid var(--red);flex:none}
+.who b{display:block;font-weight:600}.who span{font-size:14px;color:#DAD4CE}
+.top h1{font-size:clamp(26px,6.5vw,44px);font-weight:800}
+.top p{margin:10px 0 0;color:#DAD4CE}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:18px 0 4px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;padding:10px 18px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);font:600 15px Inter;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.grid{display:grid;gap:18px;padding:16px 0 36px}
+@media(min-width:620px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 26px rgba(0,0,0,.07);display:flex;flex-direction:column}
+.card[hidden]{display:none}.card img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+.card .in{padding:12px 14px 14px;display:grid;gap:6px}.card small{color:var(--muted);text-align:center}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--red);color:#fff;font:600 16px Inter;padding:14px 20px;border-radius:12px;text-decoration:none;min-height:50px}
+.btn:hover{filter:brightness(1.1)}.btn:focus-visible,.chip:focus-visible,.link:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.cta{background:var(--brand);color:#fff;text-align:center;padding:44px 0}.cta h2{font-size:clamp(24px,5.5vw,34px);font-weight:700;margin-bottom:8px}.cta p{margin:0 0 20px;color:#DAD4CE}.cta .btn{max-width:380px;margin:0 auto;background:#25D366;color:#fff}
+footer{padding:26px 0 18px;font-size:13px;color:var(--muted)}.links{display:flex;flex-wrap:wrap;gap:10px 18px;margin-bottom:12px}.link{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:2px solid var(--red)}footer p{margin:0 0 8px}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;width:62px;height:62px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:4px;max-width:460px}.tab{border:0;background:transparent;color:var(--ink);font:600 15px Inter,sans-serif;padding:12px 8px;border-radius:10px;cursor:pointer}.tab[aria-selected="true"]{background:var(--red);color:#fff}.tab:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.tabs{margin-top:20px}.ph{aspect-ratio:4/5;display:grid;place-items:center;text-align:center;background:linear-gradient(135deg,#3a3636,#7a726c);color:#E8E2DC;padding:16px;font-size:14px}.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:30px 0}
+.sh{font-size:clamp(22px,5vw,30px);font-weight:700;margin:26px 0 2px}.ssub{margin:0;color:var(--muted)}
+</style></head>
+<body>
+<header class="top"><div class="wrap">
+<div class="who"><img src="images/andre-zanqueta.jpg" alt="André Zanqueta"><div><b>André Zanqueta</b><span>Consultor de Consórcios · Servopa · Park Ingá, Maringá – PR</span></div></div>
+<h1>Oportunidades de consórcio em andamento</h1>
+<p>Atualizações semanais. Atualizado em <span id="upd">19/10</span>.</p>
+</div></header>
+<main class="wrap">
+<h2 class="sh">Em andamento</h2><p class="ssub">Grupos em andamento e com análise de estatísticas.</p><div class="chips" id="chips" role="group" aria-label="Categorias">
+<button class="chip" aria-pressed="true" data-c="todos">Todas</button><button class="chip" aria-pressed="false" data-c="veiculos">Veículos</button><button class="chip" aria-pressed="false" data-c="imovel">Imóveis</button><button class="chip" aria-pressed="false" data-c="pesados">Pesados</button><button class="chip" aria-pressed="false" data-c="invest">Investimentos</button>
+</div>
+<div class="grid" id="grid"></div>
+<div id="contSec"><h2 class="sh">Contempladas</h2><p class="ssub">Cotas que já foram contempladas.</p>
+<div class="grid" id="grid2"></div></div>
+</main>
+<section class="cta"><div class="wrap"><h2>Não achou o que procura?</h2><p>Me conta o que você quer conquistar e eu busco a melhor opção.</p><a class="btn" href="#" data-msg="Olá! Vi suas oportunidades e quero conversar sobre outro objetivo.">Falar comigo no WhatsApp</a></div></section>
+<footer><div class="wrap">
+<div class="links"><a class="link" href="https://linktr.ee/znq.andre" target="_blank" rel="noopener">Linktree</a><a class="link" href="https://www.instagram.com/andreznqta" target="_blank" rel="noopener">Instagram</a><a class="link" href="https://parkingaconsorcio.com.br/" target="_blank" rel="noopener">Park Ingá</a><a class="link" href="https://www.consorcioservopa.com.br/" target="_blank" rel="noopener">Consórcio Servopa</a></div>
+<p>Park Ingá – Consórcios · Av. Laguna, 393, Zona 03 – Maringá – PR · Seg a Sex, 9h às 18h.</p>
+<p>Condições e vagas sujeitas a alteração, sem garantia de contemplação ou rentabilidade. Consórcio Servopa: administradora autorizada e fiscalizada pelo Banco Central do Brasil. Não prometemos data de contemplação. Cotas contempladas: oferta sujeita à análise e à disponibilidade, com transferência conforme as regras da administradora.</p>
+</div></footer>
+<a class="fab" href="#" data-msg="Olá! Quero saber das oportunidades de consórcio." aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" width="32" height="32" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<script>
+var NUM="5544997525022";
+/* OPORTUNIDADES: troque a cada 2 dias. c = veiculos | imovel | pesados | invest */
+var OPS=[
+{c:"veiculos",img:"images/oportunidade-1-veiculos.jpg",t:"Veículos · crédito de R$ 203.787",d:"19/10"},
+{c:"imovel",img:"images/oportunidade-2-imovel.jpg",t:"Imóvel · crédito de R$ 403.832",d:"19/10"},
+{c:"pesados",img:"images/oportunidade-3-pesados.jpg",t:"Pesados · crédito de R$ 950.000",d:"19/10"},
+{c:"invest",img:"images/oportunidade-4-investimentos.jpg",t:"Investimentos · crédito de R$ 110.000",d:"19/10"}];
+function wa(t){return "https://wa.me/"+NUM+"?text="+encodeURIComponent(t)}
+var g=document.getElementById("grid");
+/* CONTEMPLADAS: adicione aqui no mesmo formato das oportunidades. Vazio = a seção some.
+   Exemplo: {c:"veiculos",img:"images/contemplada-1.jpg",t:"Veículos · contemplada de R$ 80.000",d:"19/10"} */
+var OPC=[];
+var cat="todos",g2=document.getElementById("grid2");
+function card(o,k){var h=wa((k?"Olá! Vi a cota contemplada: ":"Olá! Vi a oportunidade: ")+o.t+" (análise de "+o.d+"). Ainda está disponível?");var pic=o.img?'<img src="'+o.img+'" alt="'+o.t+', análise de '+o.d+'" loading="lazy">':'<div class="ph">Sua arte da cota contemplada<br>(formato 4:5)</div>';return '<article class="card" data-c="'+o.c+'"><a href="'+h+'" target="_blank" rel="noopener">'+pic+'</a><div class="in"><a class="btn" href="'+h+'" target="_blank" rel="noopener">'+(k?"Quero esta cota":"Quero esta oportunidade")+'</a><small>Análise de '+o.d+'</small></div></article>'}
+function render(){var L=OPS.filter(function(o){return cat=="todos"||o.c==cat});g.innerHTML=L.length?L.map(function(o){return card(o,false)}).join(""):'<p class="empty">Nenhuma oportunidade nesta categoria agora. Chame no WhatsApp!</p>';document.getElementById("contSec").hidden=!OPC.length;g2.innerHTML=OPC.map(function(o){return card(o,true)}).join("")}
+document.getElementById("chips").addEventListener("click",function(e){var b=e.target.closest(".chip");if(!b)return;cat=b.dataset.c;document.querySelectorAll(".chip").forEach(function(c){c.setAttribute("aria-pressed",c===b)});render()});
+render();
+document.querySelectorAll("[data-msg]").forEach(function(a){a.href=wa(a.dataset.msg);a.target="_blank";a.rel="noopener"});
+</script></body></html>

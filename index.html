@@ -2,6 +2,15 @@
 <html lang="pt-BR"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Oportunidades de Consórcio | André Zanqueta · Park Ingá</title>
+<meta name="theme-color" content="#102B46">
+<meta name="description" content="Oportunidades de consórcio em andamento e cotas contempladas. André Zanqueta, Consultor Servopa · Park Ingá, Maringá – PR.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website"><meta property="og:locale" content="pt_BR"><meta property="og:url" content="https://catalogoconsorcioznq.vercel.app/">
+<meta property="og:title" content="Oportunidades de Consórcio | André Zanqueta · Park Ingá">
+<meta property="og:description" content="Grupos em andamento com análise de estatísticas. Toque e fale comigo no WhatsApp.">
+<meta property="og:image" content="https://catalogoconsorcioznq.vercel.app/og-image.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#F6F4F1;--surface:#fff;--ink:#1A1A1A;--muted:#5F5B58;--line:#E6E1DB;--brand:#1C1A1A;--red:#C8102E;--pink:#FBE4E8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -36,19 +45,45 @@ footer{padding:26px 0 18px;font-size:13px;color:var(--muted)}.links{display:flex
 .tabs{margin-top:20px}.ph{aspect-ratio:4/5;display:grid;place-items:center;text-align:center;background:linear-gradient(135deg,#3a3636,#7a726c);color:#E8E2DC;padding:16px;font-size:14px}.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:30px 0}
 .sh{font-size:clamp(22px,5vw,30px);font-weight:700;margin:26px 0 2px}.ssub{margin:0;color:var(--muted)}
 .soon{grid-column:1/-1;background:var(--surface);border:1.5px dashed var(--line);border-radius:18px;padding:28px 20px;text-align:center}.soon b{font:700 clamp(18px,4.5vw,24px) Archivo,Inter,sans-serif;font-stretch:125%}.soon p{margin:8px 0 18px;color:var(--muted)}.soon .btn{max-width:320px;margin:0 auto}
+
+/* REDESIGN PREMIUM: visual hierarchy, spacious layout, mobile-first */
+:root{--bg:#F4F6F8;--surface:#FFFFFF;--ink:#15283B;--muted:#667586;--line:#E1E7ED;--brand:#102B46;--red:#102B46;--pink:#EAF0F5;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#F4F6F8;--surface:#FFFFFF;--ink:#15283B;--muted:#667586;--line:#E1E7ED;--brand:#102B46;--pink:#EAF0F5;color-scheme:light}}
+:root[data-theme="dark"]{--bg:#F4F6F8;--surface:#FFFFFF;--ink:#15283B;--muted:#667586;--line:#E1E7ED;--brand:#102B46;--pink:#EAF0F5;color-scheme:light}
+body{background:var(--bg);color:var(--ink);font-size:15px;line-height:1.65;padding-bottom:96px}
+.wrap{max-width:1160px;padding-left:24px;padding-right:24px}
+.top{position:relative;overflow:hidden;background:linear-gradient(125deg,#0B2035 0%,#102B46 58%,#1D405E 100%);color:#fff;padding:22px 0 54px}
+.top:after{content:"";position:absolute;width:480px;height:480px;right:-160px;top:110px;border:1px solid rgba(214,183,121,.22);border-radius:50%;box-shadow:0 0 0 48px rgba(214,183,121,.035),0 0 0 96px rgba(214,183,121,.025);pointer-events:none}
+.hero-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:42px;border-bottom:1px solid rgba(255,255,255,.13);position:relative;z-index:1}
+.who{gap:12px;margin:0}.who img{width:52px;height:52px;border:2px solid rgba(214,183,121,.9);padding:2px;background:#fff}.who b{font-size:15px;letter-spacing:.01em}.who span{display:block;font-size:12px;color:#C8D4DF;margin-top:2px}
+.location{font-size:12px;color:#D6E0E8;display:flex;align-items:center;gap:8px;white-space:nowrap}.live-dot,.update-mark{display:inline-block;width:7px;height:7px;border-radius:50%;background:#D6B779;box-shadow:0 0 0 4px rgba(214,183,121,.12)}
+.hero-copy{max-width:740px;padding-top:42px;position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#E0C68E;font-size:10px;letter-spacing:.17em;font-weight:700;text-transform:uppercase}.eyebrow:before{content:"";width:22px;height:1px;background:#D6B779}
+.top h1{font-size:clamp(34px,5.4vw,58px);font-weight:700;line-height:1.06;letter-spacing:-.045em;max-width:700px;margin:17px 0 0}.top p{max-width:610px;margin:20px 0 0;color:#D1DCE5;font-size:16px;line-height:1.75}
+.hero-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:26px}.hero-primary{background:#D6B779;color:#102B46!important;border-radius:8px;min-height:48px;padding:13px 19px;font-size:14px;font-weight:700;box-shadow:0 7px 18px rgba(0,0,0,.12)}.hero-primary:hover{filter:brightness(1.04)}.hero-link{color:#fff;text-decoration:none;font-size:13px;font-weight:600;border-bottom:1px solid rgba(255,255,255,.4);padding:8px 0}.hero-link:hover{color:#E0C68E}
+.update-note{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:28px;font-size:11px;color:#B8C7D3}.update-mark{width:6px;height:6px;box-shadow:none}
+main.wrap{padding-top:38px;padding-bottom:22px}.section-intro{display:flex;justify-content:space-between;align-items:end;gap:18px;margin:0 0 16px}.light-eyebrow{color:#8D7139;font-size:10px}.sh{font-size:clamp(26px,3.5vw,36px);font-weight:700;letter-spacing:-.035em;line-height:1.15;margin:10px 0 8px;color:#15283B}.ssub{font-size:14px;line-height:1.6;color:#6A7886;max-width:620px}.section-side{display:flex;align-items:center;gap:12px;color:#778593;font-size:11px;line-height:1.4;text-align:left}.section-number{display:grid;place-items:center;width:42px;height:42px;border:1px solid #D6B779;border-radius:50%;font-size:12px;color:#8D7139;font-weight:700;flex:none}
+.chips{gap:8px;padding:18px 0 18px;overflow:visible;flex-wrap:wrap}.chip{padding:9px 16px;border-radius:8px;border:1px solid #DCE3E9;background:#fff;color:#536273;font-size:13px;font-weight:600;transition:all .18s ease}.chip:hover{border-color:#9BAABA}.chip[aria-pressed="true"]{background:#102B46;border-color:#102B46;color:#fff;box-shadow:0 4px 10px rgba(16,43,70,.12)}
+.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;padding:8px 0 46px}.card{border:1px solid #E2E7EC;border-radius:14px;box-shadow:0 4px 16px rgba(16,43,70,.045);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}.card:hover{transform:translateY(-3px);border-color:#CCD6DF;box-shadow:0 12px 30px rgba(16,43,70,.10)}.card>a:first-child{display:block;background:#E9EEF2}.card img{aspect-ratio:4/4.25;object-fit:cover;transition:transform .25s ease}.card .in{padding:14px;gap:10px}.card small{font-size:11px;color:#718091}.btn{background:#102B46;color:#fff;border-radius:8px;font-size:13px;font-weight:700;padding:12px 16px;min-height:46px;transition:background .18s ease,transform .18s ease}.btn:hover{background:#1B4568;filter:none}.btn:focus-visible,.chip:focus-visible,.link:focus-visible{outline:3px solid #D6B779;outline-offset:3px}
+.tabs{border-radius:10px;border-color:#DCE3E9}.tab{border-radius:7px;font-size:13px}.tab[aria-selected="true"]{background:#102B46}
+#contSec{padding-top:4px}.contempladas-intro{margin-top:2px}.soon{border:1px solid #DCE3E9;border-radius:14px;padding:34px 20px;background:#fff}.soon b{font-size:22px;letter-spacing:-.025em;color:#15283B}.soon p{font-size:13px}.soon .btn{max-width:320px}
+.cta{background:#E9EEF2;color:#15283B;text-align:left;padding:44px 0;border-top:1px solid #DDE5EB;border-bottom:1px solid #DDE5EB}.cta .wrap{max-width:1160px}.cta h2{font-size:clamp(25px,4vw,34px);letter-spacing:-.035em;margin-bottom:10px;color:#15283B}.cta p{color:#617181;max-width:600px;margin-bottom:22px;font-size:14px}.cta .btn{margin:0;background:#16865A;color:#fff;max-width:350px;border-radius:8px}.cta .btn:hover{background:#116D49}
+footer{padding:28px 0 24px;background:#fff;color:#697887;font-size:11px;line-height:1.75}footer .wrap{max-width:1160px}.links{gap:9px 18px;margin-bottom:18px}.link{color:#233B51;border-bottom:1px solid #D6B779;font-size:12px}footer p{margin:0 0 10px}.fab{width:56px;height:56px;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));box-shadow:0 8px 22px rgba(16,43,70,.25);border:3px solid #fff}
+@media(min-width:760px){.top{padding-bottom:64px}.hero-copy{padding-top:52px}.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.card img{aspect-ratio:4/4.8}.card .in{padding:14px}.section-intro{margin-bottom:20px}}
+@media(max-width:619px){.wrap{padding-left:18px;padding-right:18px}.top{padding:16px 0 38px}.hero-nav{padding-bottom:27px}.who img{width:46px;height:46px}.who span{max-width:210px;font-size:11px}.location{font-size:10px}.hero-copy{padding-top:32px}.top h1{font-size:clamp(34px,10vw,44px);max-width:450px}.top p{font-size:14px;margin-top:15px}.hero-actions{gap:12px;margin-top:22px;align-items:flex-start;flex-direction:column}.hero-primary{width:100%;justify-content:center}.hero-link{margin-left:2px}.update-note{font-size:10px;margin-top:22px}.top:after{width:300px;height:300px;right:-200px;top:180px}.section-intro{align-items:flex-start}.section-side{display:none}.sh{font-size:27px}.ssub{font-size:13px}.chips{gap:7px;padding-top:16px}.chip{font-size:12px;padding:9px 12px}.grid{gap:12px;padding-bottom:34px}.card{border-radius:11px}.card img{aspect-ratio:4/4.8}.card .in{padding:9px;gap:8px}.btn{font-size:11px;padding:10px 8px;min-height:42px;gap:5px}.card small{font-size:10px}.soon{padding:26px 16px}.soon b{font-size:20px}.cta{padding:34px 0}.cta .btn{max-width:none}.fab{width:54px;height:54px;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px))}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;scroll-behavior:auto!important}}
+
 </style></head>
 <body>
 <header class="top"><div class="wrap">
-<div class="who"><img src="images/andre-zanqueta.jpg" alt="André Zanqueta"><div><b>André Zanqueta</b><span>Consultor de Consórcios · Servopa · Park Ingá, Maringá – PR</span></div></div>
-<h1>Oportunidades de consórcio em andamento</h1>
-<p>Atualizações semanais. Atualizado em <span id="upd">19/10</span>.</p>
+<div class="hero-nav"><div class="who"><img src="images/andre-zanqueta.jpg" alt="André Zanqueta"><div><b>André Zanqueta</b><span>Consultor de Consórcios · Servopa · Park Ingá</span></div></div><span class="location"><span class="live-dot"></span> Maringá · PR</span></div>
+<div class="hero-copy"><span class="eyebrow">CONSÓRCIOS COM ATENDIMENTO PERSONALIZADO</span><h1>Uma boa conquista começa com a escolha certa.</h1><p>Explore oportunidades de consórcio para veículos, imóveis e outros objetivos. Encontre uma opção e converse comigo para conferir as condições atualizadas.</p><div class="hero-actions"><a class="btn hero-primary" href="#oportunidades">Explorar oportunidades <span aria-hidden="true">↓</span></a><a class="hero-link" href="#" data-msg="Olá, André! Quero ajuda para encontrar uma opção de consórcio.">Falar com um consultor <span aria-hidden="true">↗</span></a></div><div class="update-note"><span class="update-mark"></span> Oportunidades sujeitas à disponibilidade · Atualização: <span id="upd">19/10</span></div></div>
 </div></header>
-<main class="wrap">
-<h2 class="sh">Em andamento</h2><p class="ssub">Grupos em andamento e com análise de estatísticas.</p><div class="chips" id="chips" role="group" aria-label="Categorias">
+<main class="wrap" id="oportunidades">
+<div class="section-intro"><div><span class="eyebrow light-eyebrow">ENCONTRE SUA PRÓXIMA OPORTUNIDADE</span><h2 class="sh">Consórcios em andamento</h2><p class="ssub">Explore as categorias e selecione a oportunidade que combina com seu objetivo.</p></div><div class="section-side"><span class="section-number">01</span><span>Catálogo de<br>oportunidades</span></div></div><p class="ssub">Grupos em andamento e com análise de estatísticas.</p><div class="chips" id="chips" role="group" aria-label="Categorias">
 <button class="chip" aria-pressed="true" data-c="todos">Todas</button><button class="chip" aria-pressed="false" data-c="veiculos">Veículos</button><button class="chip" aria-pressed="false" data-c="imovel">Imóveis</button><button class="chip" aria-pressed="false" data-c="pesados">Pesados</button><button class="chip" aria-pressed="false" data-c="invest">Investimentos</button>
 </div>
 <div class="grid" id="grid"></div>
-<div id="contSec"><h2 class="sh">Contempladas</h2><p class="ssub">Cotas que já foram contempladas.</p>
+<div id="contSec"><div class="section-intro contempladas-intro"><div><span class="eyebrow light-eyebrow">OPORTUNIDADES ESPECIAIS</span><h2 class="sh">Cartas contempladas</h2><p class="ssub">Consulte disponibilidade, condições e processo de transferência.</p></div><div class="section-number">02</div></div>
 <div class="grid" id="grid2"></div></div>
 </main>
 <section class="cta"><div class="wrap"><h2>Não achou o que procura?</h2><p>Me conta o que você quer conquistar e eu busco a melhor opção.</p><a class="btn" href="#" data-msg="Olá! Vi suas oportunidades e quero conversar sobre outro objetivo.">Falar comigo no WhatsApp</a></div></section>
